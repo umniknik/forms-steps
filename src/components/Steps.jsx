@@ -105,11 +105,11 @@ function Steps() {
             <form onSubmit={handleSubmit} className="form">
                 <div className="form-group">
                     <label htmlFor='date'>Дата (ДД.ММ.ГГ)</label>
-                    <input id='date' name='date' value={form.date} onChange={handleDate} />
+                    <input type="date" id='date' name='date' value={form.date} onChange={handleDate} />
                 </div>
                 <div className="form-group">
                     <label htmlFor='distance'>Пройденно км</label>
-                    <input id='distance' name='distance' value={form.distance} onChange={handleDate} />
+                    <input type="number" id='distance' name='distance' value={form.distance} onChange={handleDate} min="0"/>
                 </div>
                 <button type="submit" className="buttonOk">ОК</button>
             </form>
